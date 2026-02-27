@@ -6,7 +6,7 @@ require (
 	github.com/go-sql-driver/mysql v1.9.3
 	github.com/gospider007/gson v0.0.0-20260227072532-00826c662d4b
 	github.com/gospider007/gtls v0.0.0-20260227072642-1f7cc1074b87
-	github.com/gospider007/netx v0.0.0-20260227072642-d8208f0968e2
+	github.com/gospider007/netx v0.0.0-20260227072826-31329a484b2f
 )
 
 require (
@@ -23,8 +23,8 @@ require (
 	github.com/google/pprof v0.0.0-20260202012954-cb029daf43ef // indirect
 	github.com/gospider007/conf v0.0.0-20260227072506-ec7f839a2b80 // indirect
 	github.com/gospider007/http1 v0.0.0-20260227072645-4d7c186c5117 // indirect
-	github.com/gospider007/http2 v0.0.0-20260227072643-54cd283a26df // indirect
-	github.com/gospider007/http3 v0.0.0-20260227072517-e9fdcdb552e4 // indirect
+	github.com/gospider007/http2 v0.0.0-20260227072824-c5fded74f67f // indirect
+	github.com/gospider007/http3 v0.0.0-20260227072823-ec64a19f85c0 // indirect
 	github.com/gospider007/ja3 v0.0.0-20260227072507-23e3dd5d634b // indirect
 	github.com/gospider007/kinds v0.0.0-20260211060834-06a10e2431d8 // indirect
 	github.com/gospider007/re v0.0.0-20260227072205-6223d82a3dab // indirect
