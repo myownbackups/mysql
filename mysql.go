@@ -178,13 +178,16 @@ func NewClient(ctx context.Context, options ...ClientOption) (*Client, error) {
 		if option.DbName != "" {
 			openAddr += option.DbName
 		}
-		if len(option.Params) > 0 {
-			value := url.Values{}
-			for k, v := range option.Params {
-				value.Add(k, v)
-			}
-			openAddr += "?" + value.Encode()
+		if len(option.Params) == 0 {
+			option.Params = map[string]string{"parseTime": "true"}
+		} else if _, ok := option.Params["parseTime"]; !ok {
+			option.Params["parseTime"] = "true"
 		}
+		value := url.Values{}
+		for k, v := range option.Params {
+			value.Add(k, v)
+		}
+		openAddr += "?" + value.Encode()
 	}
 	db, err := sql.Open(option.DriverName, openAddr)
 	if err != nil {
